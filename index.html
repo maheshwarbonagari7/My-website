@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maheshwar Bonagari — Senior MI &amp; BI Analyst</title>
+<meta name="description" content="Maheshwar (Mahi) Bonagari — Senior MI &amp; BI Analyst. SQL, Power BI, Azure Databricks. Data analytics, reporting and engineering across retail and regulated banking." />
+
+<!-- ============ EDIT ME ============
+  CV and email are wired in. One thing left to personalise:
+    EDIT-DATES — fill in real start/end years in the Experience section
+                 (search for "20XX")
+================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --ink:#11203A; --navy:#1F3864; --accent:#DD8A1A; --accent-soft:#F4E2C4;
+    --bg:#F6F8FB; --surface:#FFFFFF; --line:#E2E7EF; --muted:#5C6677; --body:#2A3242;
+    --display:'Space Grotesk',sans-serif; --sans:'Inter',sans-serif; --mono:'IBM Plex Mono',monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--bg);color:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent-soft);color:var(--ink)}
+
+  /* ---------- nav ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-family:var(--display);font-weight:700;color:var(--ink);font-size:1.05rem;letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{font-size:.83rem;color:var(--muted);font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cv{font-family:var(--mono);font-size:.74rem;letter-spacing:.03em;border:1px solid var(--ink);color:var(--ink);padding:7px 13px;border-radius:6px;transition:all .2s}
+  .nav-cv:hover{background:var(--ink);color:#fff}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+
+  /* ---------- layout ---------- */
+  section{max-width:var(--maxw);margin:0 auto;padding:84px 24px}
+  .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent)}
+  h2.sec{font-family:var(--display);font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--ink);font-weight:700;letter-spacing:-.02em;margin-bottom:34px;line-height:1.15}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden}
+  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 0%,transparent 72%);mask-image:radial-gradient(ellipse 70% 60% at 30% 30%,#000 0%,transparent 72%);opacity:.6;pointer-events:none}
+  .hero-in{position:relative;max-width:var(--maxw);margin:0 auto;padding:96px 24px 78px}
+  .hero .tag{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;color:var(--navy);margin-bottom:22px}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,6.2vw,4.3rem);line-height:1.02;letter-spacing:-.03em;color:var(--ink);max-width:14ch}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero .lede{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--muted);max-width:54ch;margin-top:24px}
+  .status{font-family:var(--mono);font-size:.78rem;color:var(--ink);margin-top:34px;padding:13px 16px;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:inline-flex;flex-wrap:wrap;gap:8px 16px;max-width:100%}
+  .status b{color:var(--accent);font-weight:500}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .btn{font-weight:600;font-size:.92rem;padding:12px 22px;border-radius:8px;transition:all .2s;display:inline-flex;align-items:center;gap:9px}
+  .btn-1{background:var(--ink);color:#fff}
+  .btn-1:hover{background:var(--navy);transform:translateY(-2px)}
+  .btn-2{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn-2:hover{border-color:var(--ink);transform:translateY(-2px)}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+  .about p{font-size:1.05rem;color:var(--body);margin-bottom:18px}
+  .about p strong{color:var(--ink);font-weight:600}
+  .facts{border-left:2px solid var(--accent);padding-left:22px;display:flex;flex-direction:column;gap:18px}
+  .fact .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .fact .v{font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.05rem}
+
+  /* ---------- skills ---------- */
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .skill-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .skill-card h3{font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:500}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-size:.86rem;font-weight:500;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:6px 12px;border-radius:20px}
+
+  /* ---------- experience ---------- */
+  .timeline{display:flex;flex-direction:column}
+  .role{display:grid;grid-template-columns:160px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
+  .role:last-child{border-bottom:1px solid var(--line)}
+  .role .when{font-family:var(--mono);font-size:.8rem;color:var(--muted);padding-top:4px}
+  .role h3{font-family:var(--display);font-size:1.18rem;color:var(--ink);font-weight:600}
+  .role .co{color:var(--accent);font-weight:600;font-size:.95rem;margin:3px 0 12px}
+  .role ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .role li{position:relative;padding-left:18px;color:var(--body);font-size:.96rem}
+  .role li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;background:var(--accent);border-radius:50%}
+
+  /* ---------- projects ---------- */
+  .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s,border-color .22s}
+  .proj:hover{transform:translateY(-4px);box-shadow:0 14px 34px -18px rgba(17,32,58,.4);border-color:#cdd5e2}
+  .proj .pno{font-family:var(--mono);font-size:.74rem;color:var(--accent);letter-spacing:.1em}
+  .proj h3{font-family:var(--display);font-size:1.22rem;color:var(--ink);font-weight:600;margin:8px 0 10px}
+  .proj p{font-size:.95rem;color:var(--muted);flex:1}
+  .proj .tech{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 18px}
+  .proj .tech span{font-family:var(--mono);font-size:.7rem;color:var(--navy);background:var(--bg);border:1px solid var(--line);padding:3px 8px;border-radius:5px}
+  .proj .repo{font-weight:600;font-size:.9rem;color:var(--ink);display:inline-flex;align-items:center;gap:7px}
+  .proj .repo svg{transition:transform .2s}
+  .proj:hover .repo svg{transform:translate(3px,-3px)}
+
+  /* ---------- education + certs ---------- */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .edu-item{padding:18px 0;border-top:1px solid var(--line)}
+  .edu-item:first-child{border-top:none;padding-top:0}
+  .edu-item h3{font-family:var(--display);font-size:1.08rem;color:var(--ink);font-weight:600}
+  .edu-item .meta{color:var(--accent);font-weight:600;font-size:.9rem;margin:2px 0 6px}
+  .edu-item p{font-size:.92rem;color:var(--muted)}
+  .cert-list{display:flex;flex-direction:column;gap:10px}
+  .cert{display:flex;gap:13px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .cert .mark{font-family:var(--mono);color:var(--accent);font-size:.85rem;margin-top:1px}
+  .cert .ct{font-weight:600;color:var(--ink);font-size:.94rem}
+  .cert .cb{font-size:.82rem;color:var(--muted)}
+
+  /* ---------- contact / footer ---------- */
+  .contact{background:var(--ink);border-radius:20px;padding:56px 40px;text-align:center;color:#fff;margin-top:20px}
+  .contact .eyebrow{justify-content:center;color:var(--accent)}
+  .contact .eyebrow::before{display:none}
+  .contact h2{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:700;letter-spacing:-.02em;margin-bottom:14px}
+  .contact p{color:#aeb8c8;max-width:48ch;margin:0 auto 28px}
+  .contact .cta{justify-content:center}
+  .contact .btn-1{background:var(--accent);color:var(--ink)}
+  .contact .btn-1:hover{background:#f0a23a}
+  .contact .btn-2{border-color:rgba(255,255,255,.25);color:#fff}
+  .contact .btn-2:hover{border-color:#fff}
+  footer{max-width:var(--maxw);margin:0 auto;padding:30px 24px 50px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:.82rem;font-family:var(--mono)}
+
+  /* ---------- reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:780px){
+    .nav-links{display:none}.menu-btn{display:block}
+    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);padding:18px 24px;gap:16px}
+    .about-grid,.skills,.proj-grid,.two-col{grid-template-columns:1fr}
+    .role{grid-template-columns:1fr;gap:10px}
+    section{padding:60px 22px}.hero-in{padding:70px 22px 56px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}
+    .btn,.proj{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">Maheshwar<span>.</span></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="assets/Maheshwar_Bonagari.pdf" class="nav-cv" download="Maheshwar_Bonagari.pdf">Download CV ↓</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top" style="padding:0;max-width:none">
+  <div class="hero-grid"></div>
+  <div class="hero-in">
+    <p class="tag reveal">// Senior MI &amp; BI Analyst — Leeds, UK</p>
+    <h1 class="reveal">I turn messy data into <em>decisions</em>.</h1>
+    <p class="lede reveal">Analytics, reporting and data pipelines across retail and regulated banking — built on SQL, Power BI and the Azure data stack.</p>
+    <div class="status reveal">
+      <span><b>5+</b> yrs commercial</span>
+      <span><b>·</b></span>
+      <span>SQL / Power BI / Azure Databricks</span>
+      <span><b>·</b></span>
+      <span>Retail &amp; Banking</span>
+      <span><b>·</b></span>
+      <span>MSc Computing</span>
+    </div>
+    <div class="cta reveal">
+      <a href="#projects" class="btn btn-1">View projects</a>
+      <a href="https://www.linkedin.com/in/maheshwar-bonagari" target="_blank" rel="noopener" class="btn btn-2">LinkedIn</a>
+      <a href="https://github.com/maheshwarbonagari7" target="_blank" rel="noopener" class="btn btn-2">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <p class="eyebrow reveal">About</p>
+  <div class="about-grid">
+    <div class="about reveal">
+      <p>I'm <strong>Mahi</strong> — a data and BI professional with <strong>5+ years</strong> turning data into reporting, insight and decisions across retail and regulated financial services.</p>
+      <p>Currently a <strong>Senior MI &amp; BI Analyst at Asda</strong>, where I work on a major platform migration from Tableau/Alteryx to <strong>Power BI and Azure</strong>, and on <strong>SAP S/4HANA</strong> data validation as part of the ERP transition. Before that I delivered credit-risk and lending portfolio reporting in banking.</p>
+      <p>My core stack is <strong>SQL, Power BI / DAX, and Azure Databricks (PySpark &amp; Delta Lake)</strong>, backed by an MSc in Computing. I care about clean data models, honest metrics, and reporting people actually use.</p>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><div class="k">Based in</div><div class="v">Leeds, United Kingdom</div></div>
+      <div class="fact"><div class="k">Current role</div><div class="v">Senior MI &amp; BI Analyst</div></div>
+      <div class="fact"><div class="k">Focus</div><div class="v">BI · Data Engineering · Credit-Risk MI</div></div>
+      <div class="fact"><div class="k">Education</div><div class="v">MSc Computing</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <p class="eyebrow reveal">Toolkit</p>
+  <h2 class="sec reveal">What I build with</h2>
+  <div class="skills">
+    <div class="skill-card reveal"><h3>Business Intelligence</h3>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query (M)</span><span class="chip">Tableau</span><span class="chip">Data modelling</span></div></div>
+    <div class="skill-card reveal"><h3>Data Engineering</h3>
+      <div class="chips"><span class="chip">Azure Databricks</span><span class="chip">PySpark</span><span class="chip">Delta Lake</span><span class="chip">Azure Data Factory</span><span class="chip">Medallion architecture</span></div></div>
+    <div class="skill-card reveal"><h3>Languages &amp; Query</h3>
+      <div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">R</span><span class="chip">PySpark SQL</span></div></div>
+    <div class="skill-card reveal"><h3>Domains</h3>
+      <div class="chips"><span class="chip">Credit-risk / Collections MI</span><span class="chip">IFRS 9</span><span class="chip">Consumer Duty</span><span class="chip">Retail analytics</span></div></div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <p class="eyebrow reveal">Experience</p>
+  <h2 class="sec reveal">Where I've worked</h2>
+  <div class="timeline">
+    <div class="role reveal">
+      <!-- EDIT-DATES -->
+      <div class="when">20XX — Present</div>
+      <div>
+        <h3>Senior MI &amp; BI Analyst</h3>
+        <div class="co">Asda · Leeds, UK</div>
+        <ul>
+          <li>Leading reporting migration from Tableau/Alteryx to Power BI and the Azure data platform.</li>
+          <li>SAP S/4HANA data validation across the ERP transition, ensuring reporting continuity.</li>
+          <li>Delivered ~25% storage cost reduction and ~40% reduction in integration effort through pipeline and model redesign.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="role reveal">
+      <!-- EDIT-DATES -->
+      <div class="when">20XX — 20XX</div>
+      <div>
+        <h3>Data / MI Analyst</h3>
+        <div class="co">TSB Bank · UK</div>
+        <ul>
+          <li>Credit-risk and mortgage/lending portfolio reporting in a regulated banking environment.</li>
+          <li>Built MI on delinquency, arrears and portfolio performance to support risk decisions.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="role reveal">
+      <!-- EDIT-DATES -->
+      <div class="when">20XX — 20XX</div>
+      <div>
+        <h3>Business Intelligence Intern</h3>
+        <div class="co">Teesside University · UK</div>
+        <ul>
+          <li>Supported BI reporting and data analysis projects during MSc study.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="role reveal">
+      <!-- EDIT-DATES -->
+      <div class="when">20XX — 20XX</div>
+      <div>
+        <h3>Data Analyst</h3>
+        <div class="co">Netprise Solutions · India</div>
+        <ul>
+          <li>Early-career data analysis: reporting, data preparation and SQL-based insight.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <p class="eyebrow reveal">Selected work</p>
+  <h2 class="sec reveal">Projects on GitHub</h2>
+  <div class="proj-grid">
+    <a class="proj reveal" href="https://github.com/maheshwarbonagari7/retail-sql-analytics" target="_blank" rel="noopener">
+      <span class="pno">01</span>
+      <h3>Retail SQL Analytics</h3>
+      <p>Analytical SQL on a 3-year retail dataset — window functions, customer cohort retention and RFM segmentation, with a runnable SQLite database and real findings.</p>
+      <div class="tech"><span>SQL</span><span>SQLite</span><span>Window functions</span><span>Cohorts</span></div>
+      <span class="repo">View repo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+    </a>
+    <a class="proj reveal" href="https://github.com/maheshwarbonagari7/databricks-medallion-pipeline" target="_blank" rel="noopener">
+      <span class="pno">02</span>
+      <h3>Databricks Medallion Pipeline</h3>
+      <p>A PySpark Bronze→Silver→Gold pipeline on Azure Databricks with Delta Lake — cleaning, deduplication, MERGE upserts and time travel over messy retail data.</p>
+      <div class="tech"><span>PySpark</span><span>Delta Lake</span><span>Databricks</span><span>ETL</span></div>
+      <span class="repo">View repo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+    </a>
+    <a class="proj reveal" href="https://github.com/maheshwarbonagari7/powerbi-collections-mi" target="_blank" rel="noopener">
+      <span class="pno">03</span>
+      <h3>Collections &amp; Credit-Risk MI</h3>
+      <p>A Power BI MI dashboard project — DPD roll rates, cure rates and IFRS 9 staging modelled in DAX over a star-schema loan book, with a full build guide.</p>
+      <div class="tech"><span>Power BI</span><span>DAX</span><span>Credit risk</span><span>Star schema</span></div>
+      <span class="repo">View repo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+    </a>
+    <a class="proj reveal" href="https://github.com/maheshwarbonagari7/pneumonia-detection-cnn" target="_blank" rel="noopener">
+      <span class="pno">04</span>
+      <h3>Pneumonia Detection CNN</h3>
+      <p>A convolutional neural network classifying chest X-rays in TensorFlow/Keras, with a full train / evaluate / predict pipeline. Based on my MSc dissertation.</p>
+      <div class="tech"><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Computer vision</span></div>
+      <span class="repo">View repo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION + CERTS ===================== -->
+<section id="education">
+  <div class="two-col">
+    <div>
+      <p class="eyebrow reveal">Education</p>
+      <h2 class="sec reveal">Academic background</h2>
+      <div class="reveal">
+        <div class="edu-item">
+          <h3>MSc, Computing</h3>
+          <div class="meta">Teesside University, UK</div>
+          <p>Dissertation: CNN-based pneumonia detection from chest X-rays using TensorFlow/Keras.</p>
+        </div>
+        <div class="edu-item">
+          <h3>BEng, Computer Science</h3>
+          <div class="meta">Osmania University, India</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow reveal">Credentials</p>
+      <h2 class="sec reveal">Certifications</h2>
+      <div class="cert-list reveal">
+        <div class="cert"><span class="mark">▹</span><div><div class="ct">Advanced Microsoft Power BI</div></div></div>
+        <div class="cert"><span class="mark">▹</span><div><div class="ct">Data Engineering with Databricks</div></div></div>
+        <div class="cert"><span class="mark">▹</span><div><div class="ct">Machine Learning with Python</div><div class="cb">Professional Certificate</div></div></div>
+        <div class="cert"><span class="mark">▹</span><div><div class="ct">Python Essentials 1</div><div class="cb">Cisco</div></div></div>
+        <div class="cert"><span class="mark">▹</span><div><div class="ct">Azure Logic Apps</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" style="padding-top:30px">
+  <div class="contact reveal">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Let's talk data.</h2>
+    <p>Open to BI, data analytics and data engineering roles. The fastest way to reach me is LinkedIn.</p>
+    <div class="cta">
+      <a href="https://www.linkedin.com/in/maheshwar-bonagari" target="_blank" rel="noopener" class="btn btn-1">Connect on LinkedIn</a>
+      <a href="mailto:maheshwarbonagari7@gmail.com" class="btn btn-2">Email me</a>
+      <a href="https://github.com/maheshwarbonagari7" target="_blank" rel="noopener" class="btn btn-2">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© <span id="yr"></span> Maheshwar Bonagari</span>
+  <span>Built &amp; hosted on GitHub Pages</span>
+</footer>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // mobile menu
+  var mb = document.getElementById('menuBtn'), nl = document.getElementById('navlinks');
+  mb.addEventListener('click', function(){ nl.classList.toggle('open'); });
+  nl.addEventListener('click', function(e){ if(e.target.tagName==='A') nl.classList.remove('open'); });
+  // scroll reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
